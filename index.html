@@ -184,6 +184,43 @@
       color: #ffffff;
       font-weight: 600;
     }
+    .intro-sub {
+      margin-top: 14px;
+      font-size: 13.5px;
+      line-height: 1.65;
+      color: var(--text-muted);
+    }
+    .intro-sub strong {
+      color: var(--text);
+      font-weight: 600;
+    }
+    .intro-features-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 10px 16px;
+      margin-top: 18px;
+    }
+    .intro-feature-item {
+      background: rgba(255, 255, 255, 0.025);
+      border: 1px solid var(--border-hairline);
+      border-radius: 5px;
+      padding: 10px 14px;
+      font-size: 12.5px;
+      line-height: 1.45;
+      color: var(--text-muted);
+    }
+    .intro-feature-item strong {
+      display: block;
+      color: var(--text-bright);
+      font-size: 13px;
+      font-weight: 600;
+      margin-bottom: 2px;
+    }
+    @media (max-width: 600px) {
+      .intro-features-grid {
+        grid-template-columns: 1fr;
+      }
+    }
 
     /* Open Section Architecture */
     .guide-section {
@@ -581,6 +618,27 @@
       <p class="intro-lead">
         Editing is rhythm, storytelling, and focus. QuickSweep protects your creative momentum by turning raw project chaos into clean, beautifully structured bins in a single click—or silently in the background while you cut. No searching, no manual sorting, and zero friction. Just effortless editorial clarity so you can stay locked in the flow of the edit.
       </p>
+      <p class="intro-sub">
+        QuickSweep uses an intelligent detection system to identify and sort loose project items based on Premiere Pro metadata, file extensions, and smart keyword scoring—specifically designed to detect and sweep <strong>Sequences</strong>, <strong>Nested Sequences (Nests)</strong>, <strong>Video Footage</strong>, <strong>Music</strong>, <strong>Sound Effects (SFX)</strong>, <strong>After Effects (.aep)</strong>, <strong>Graphics / Stills</strong>, <strong>Text Styles</strong>, <strong>Adjustment Layers</strong>, <strong>Captions</strong>, <strong>Mattes</strong>, and <strong>Black Video</strong> into their designated bins.
+      </p>
+      <div class="intro-features-grid">
+        <div class="intro-feature-item">
+          <strong>Automatically Categorize Assets</strong>
+          Sorts footage, audio, graphics, sequences, and project elements
+        </div>
+        <div class="intro-feature-item">
+          <strong>Preset Bin Structures</strong>
+          Generate or match custom folder hierarchies in a single click
+        </div>
+        <div class="intro-feature-item">
+          <strong>Background Sorting Every 5 Seconds</strong>
+          Hands-free Auto-Sweep while you cut
+        </div>
+        <div class="intro-feature-item">
+          <strong>Works Offline &amp; NDA-Friendly</strong>
+          100% local processing with zero cloud or AI data sharing
+        </div>
+      </div>
     </div>
 
     <!-- SECTION: Project Safety -->
